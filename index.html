@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Círculos | Glass Edition</title>
+    
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div class="background-overlay"></div>
+
+    <nav class="navbar glass">
+        <div class="logo">Lab<span class="highlight">Interact</span></div>
+        <ul class="nav-links">
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1>Simulación de Círculos</h1>
+
+        <div class="controls glass">
+            <label for="slider">Cantidad de círculos:</label>
+            <input type="range" id="slider" min="1" max="20" value="8">
+            <span id="valor" class="glass-value">8</span>
+        </div>
+
+        <div class="container">
+            <div class="card glass">
+                <h3>Simulación 1</h3>
+                <p class="subtitle">Movimiento simple</p>
+                <div class="canvas-wrapper">
+                    <canvas id="canvas1"></canvas>
+                </div>
+            </div>
+
+            <div class="card glass">
+                <h3>Simulación 2</h3>
+                <p class="subtitle">Colisión (color)</p>
+                <div class="canvas-wrapper">
+                    <canvas id="canvas2"></canvas>
+                </div>
+            </div>
+
+            <div class="card glass">
+                <h3>Simulación 3</h3>
+                <p class="subtitle">Colisión + rebote</p>
+                <div class="canvas-wrapper">
+                    <canvas id="canvas3"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer glass">
+        <p>&copy; 2026 Desarrollado por <span class="programmer-name">DIAZ ROSALES ANAHI</span></p>
+        <div class="socials">
+            <span>Portfolio</span> | <span>GitHub</span>
+        </div>
+    </footer>
+
+    <script src="./js/main_movimiento.js"></script>
+    <script src="./js/main_colision.js"></script>
+    <script src="./js/main_rebote.js"></script>
+
+</body>
+</html>
